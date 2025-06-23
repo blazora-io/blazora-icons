@@ -1,0 +1,38 @@
+﻿<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="@Width"
+    height="@Height"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="@Class"
+    @attributes="UserAttributes">
+    @_markup
+</svg>
+@code
+{
+    private MarkupString _markup;
+
+    [Parameter, EditorRequired]
+    public required string Name { get; set; }
+
+    [Parameter(CaptureUnmatchedValues = true)]
+    public Dictionary<string, object?> UserAttributes { get; set; } = new(StringComparer.OrdinalIgnoreCase);
+
+    [Parameter]
+    public string? Class { get; set; }
+
+    [Parameter]
+    public int Width { get; set; } = 24;
+
+    [Parameter]
+    public int Height { get; set; } = 24;
+
+    protected override void OnParametersSet()
+    {
+        _markup = (MarkupString)LucideIcons.GetSvgContent(Name);
+    }
+}

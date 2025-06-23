@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <PackageId>Blazora.Icons</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>pseudonacho</Authors>
+    <Company>blazora.io</Company>
+    <Description>A lightweight Blazor component to render Lucide (so far...) icons.</Description>
+    <PackageTags>blazor;icons;lucide;web;components</PackageTags>
+    <PackageProjectUrl>https://github.com/blazora-io/blazora-icons</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/blazora-io/blazora-icons</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.17" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+</Project>
