@@ -6,10 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
 
     <PackageId>Blazora.Icons</PackageId>
-    <Version>1.0.0</Version>
-    <Authors>pseudonacho</Authors>
+    <Version>1.0.1</Version>
+    <Authors>snackalloc</Authors>
     <Company>blazora.io</Company>
-    <Description>A lightweight Blazor component to render Lucide (so far...) icons.</Description>
+    <Description>A lightweight Blazor component to render (Lucide so far...) icons.</Description>
     <PackageTags>blazor;icons;lucide;web;components</PackageTags>
     <PackageProjectUrl>https://github.com/blazora-io/blazora-icons</PackageProjectUrl>
     <RepositoryUrl>https://github.com/blazora-io/blazora-icons</RepositoryUrl>
